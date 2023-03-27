@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "PJKRXH6ymq6gYzD0/fWJ9wMsYCVdpmZbmGDB2He/dbPHhHYHCeSmvRVBPN4n4MWMYP2Y9Hnc/QLIY3JwrokFgQ==",
+  "success": true,
+  "projectFilePath": "/Users/leman/Projects/Corporation/Corporation.Core/Corporation.Core.csproj",
+  "expectedPackageFiles": [
+    "/Users/leman/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.12/microsoft.aspnetcore.app.ref.6.0.12.nupkg.sha512",
+    "/Users/leman/.nuget/packages/microsoft.netcore.app.ref/6.0.12/microsoft.netcore.app.ref.6.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

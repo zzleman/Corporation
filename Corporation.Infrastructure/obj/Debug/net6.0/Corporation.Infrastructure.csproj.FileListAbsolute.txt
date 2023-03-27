@@ -1,0 +1,15 @@
+/Users/leman/Projects/Corporation/Corporation.Infrastructure/bin/Debug/net6.0/Corporation.Infrastructure.deps.json
+/Users/leman/Projects/Corporation/Corporation.Infrastructure/bin/Debug/net6.0/Corporation.Infrastructure.dll
+/Users/leman/Projects/Corporation/Corporation.Infrastructure/bin/Debug/net6.0/Corporation.Infrastructure.pdb
+/Users/leman/Projects/Corporation/Corporation.Infrastructure/bin/Debug/net6.0/Corporation.Core.dll
+/Users/leman/Projects/Corporation/Corporation.Infrastructure/bin/Debug/net6.0/Corporation.Core.pdb
+/Users/leman/Projects/Corporation/Corporation.Infrastructure/obj/Debug/net6.0/Corporation.Infrastructure.csproj.AssemblyReference.cache
+/Users/leman/Projects/Corporation/Corporation.Infrastructure/obj/Debug/net6.0/Corporation.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/leman/Projects/Corporation/Corporation.Infrastructure/obj/Debug/net6.0/Corporation.Infrastructure.AssemblyInfoInputs.cache
+/Users/leman/Projects/Corporation/Corporation.Infrastructure/obj/Debug/net6.0/Corporation.Infrastructure.AssemblyInfo.cs
+/Users/leman/Projects/Corporation/Corporation.Infrastructure/obj/Debug/net6.0/Corporation.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/leman/Projects/Corporation/Corporation.Infrastructure/obj/Debug/net6.0/Corporation.Infrastructure.csproj.CopyComplete
+/Users/leman/Projects/Corporation/Corporation.Infrastructure/obj/Debug/net6.0/Corporation.Infrastructure.dll
+/Users/leman/Projects/Corporation/Corporation.Infrastructure/obj/Debug/net6.0/refint/Corporation.Infrastructure.dll
+/Users/leman/Projects/Corporation/Corporation.Infrastructure/obj/Debug/net6.0/Corporation.Infrastructure.pdb
+/Users/leman/Projects/Corporation/Corporation.Infrastructure/obj/Debug/net6.0/ref/Corporation.Infrastructure.dll

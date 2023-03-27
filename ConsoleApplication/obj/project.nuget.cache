@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "F9AOPLZNpH6TTXkLkonAEQf9RsgCUJ7YjmW+UCMk+a00JVUAQj30F8XYYa0KnRtMMd5C5F3YVvdO9Mcl67Cqag==",
+  "success": true,
+  "projectFilePath": "/Users/leman/Projects/Corporation/ConsoleApplication/ConsoleApplication.csproj",
+  "expectedPackageFiles": [
+    "/Users/leman/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.12/microsoft.aspnetcore.app.ref.6.0.12.nupkg.sha512",
+    "/Users/leman/.nuget/packages/microsoft.netcore.app.host.osx-arm64/6.0.12/microsoft.netcore.app.host.osx-arm64.6.0.12.nupkg.sha512",
+    "/Users/leman/.nuget/packages/microsoft.netcore.app.ref/6.0.12/microsoft.netcore.app.ref.6.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

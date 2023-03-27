@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DBContext\" />
+    <None Remove="Services\" />
+    <None Remove="Utilities\" />
+    <None Remove="Utilities\Exceptions\" />
+    <None Remove="Utilities\Helper\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DBContext\" />
+    <Folder Include="Services\" />
+    <Folder Include="Utilities\" />
+    <Folder Include="Utilities\Exceptions\" />
+    <Folder Include="Utilities\Helper\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Corporation.Core\Corporation.Core.csproj" />
+  </ItemGroup>
+</Project>
