@@ -98,29 +98,32 @@ namespace Corporation.Infrastructure.Services;
 
     public void GetDepartamentByName(string searchname)
     {
-
-        for (int i = 0; i < AppDbContext.Companies.Length; i++)
-        {
-            if (AppDbContext.Companies[i].Name.ToUpper().Equals(searchname.ToUpper()))
+            bool existCompany = false;
+            foreach (var company in AppDbContext.Companies)
             {
-                Console.WriteLine("Departaments:");
-                foreach (var departament in AppDbContext.Departaments)
+                if (company.Name.ToUpper().Equals((searchname.ToUpper())))
                 {
-                    if (departament == null) break;
-                    if (departament.CompanyId == AppDbContext.Companies[i].Id)
+                    Console.WriteLine("Departaments:");
+                    foreach (var departament in AppDbContext.Departaments)
                     {
-                           Console.WriteLine(departament.Name);
+                        if (departament != null && departament.CompanyId == company.Id)
+                        {
+                            Console.WriteLine(departament.Name);
+
+                        }
                     }
+                    existCompany = true;
+                    break;
                 }
-                break;
-
+                if(!existCompany)
+                {
+                throw new NotExistException("There is not such named company!");
+                }
             }
-            else
-            {
-                throw new NotExistException("There is not such named company");
-            }
-        }
+           
+           
 
+        
     }
 
 

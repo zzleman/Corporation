@@ -31,7 +31,9 @@ namespace Corporation.Infrastructure.Services
                 if (departament.Id == departament_Id)
                 {
                     departament1 = departament;
-                }break;
+                    break;
+ 
+                }
                 
             }
             
@@ -73,29 +75,31 @@ namespace Corporation.Infrastructure.Services
 
         public void GetEmployeeByName(string nameoflist)
         {
-
-            for (int i = 0; i < AppDbContext.Departaments.Length; i++)
+            bool existDepartament = false;
+            foreach (var departament in AppDbContext.Departaments)
             {
-                if (AppDbContext.Departaments[i].Name.Equals(nameoflist))
+                if (departament.Name.ToUpper().Equals((nameoflist.ToUpper())))
                 {
                     Console.WriteLine("Employees:");
                     foreach (var employee in AppDbContext.Employees)
                     {
-                        if (employee == null) break;
-                        if (employee.DepartamentId == AppDbContext.Departaments[i].Id)
+                        if (employee != null && employee.DepartamentId==departament.Id)
                         {
                             Console.WriteLine(employee.Name);
                         }
                     }
+                    existDepartament = true;
                     break;
-
                 }
-                else
+                if(!existDepartament)
                 {
-                    throw new NotExistException("There is not such named departament");
+                    throw new NotExistException("There is not such named departament!");
                 }
             }
+            
         }
+
+
 
     }
 }
