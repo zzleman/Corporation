@@ -85,18 +85,18 @@ namespace Corporation.Infrastructure.Services
                     {
                         if (employee != null && employee.DepartamentId==departament.Id)
                         {
-                            Console.WriteLine(employee.Name);
+                            Console.WriteLine(employee.Name+" "+employee.Surname);
                         }
                     }
                     existDepartament = true;
                     break;
                 }
-                if(!existDepartament)
-                {
-                    throw new NotExistException("There is not such named departament!");
-                }
+               
             }
-            
+            if (!existDepartament)
+            {
+                throw new NotExistException("There is not such named departament!");
+            }
         }
 
 

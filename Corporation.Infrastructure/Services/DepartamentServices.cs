@@ -56,27 +56,27 @@ namespace Corporation.Infrastructure.Services;
         }
     }
 
-    public void GetById(int id)
-    {
-        for (int i = 0; i < counter; i++)
-        {
-            if (AppDbContext.Departaments[i].Id == id)
-            {
-                String company = String.Empty;
-                foreach (var item in AppDbContext.Companies)
-                {
-                    if (item == null) continue;
-                    if (item.Id == AppDbContext.Departaments[i].Id)
-                    {
-                        company = item.Name;
-                        break;
-                    }
-                }
-                Console.WriteLine($"\n\t{AppDbContext.Departaments[i].Id} \t {AppDbContext.Departaments[i].Name} \t\t {AppDbContext.Departaments[i].EmployeeLimit} \t\t\t {company}");
-                return;
-            }
-        }
-    }
+    //public void GetById(int id)
+    //{
+    //    for (int i = 0; i < counter; i++)
+    //    {
+    //        if (AppDbContext.Departaments[i].Id == id)
+    //        {
+    //            String company = String.Empty;
+    //            foreach (var item in AppDbContext.Companies)
+    //            {
+    //                if (item == null) continue;
+    //                if (item.Id == AppDbContext.Departaments[i].Id)
+    //                {
+    //                    company = item.Name;
+    //                    break;
+    //                }
+    //            }
+    //            Console.WriteLine($"\n\t{AppDbContext.Departaments[i].Id} \t {AppDbContext.Departaments[i].Name} \t\t {AppDbContext.Departaments[i].EmployeeLimit} \t\t\t {company}");
+    //            return;
+    //        }
+    //    }
+    //}
 
     public void UpdateDepartaments(int update,string name, int employee_limit)
     {
@@ -115,15 +115,14 @@ namespace Corporation.Infrastructure.Services;
                     existCompany = true;
                     break;
                 }
-                if(!existCompany)
-                {
-                throw new NotExistException("There is not such named company!");
-                }
             }
-           
-           
+        if (!existCompany)
+        {
+            throw new NotExistException("There is not such named company!");
+        }
 
-        
+
+
     }
 
 

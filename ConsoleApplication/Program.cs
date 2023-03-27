@@ -285,6 +285,7 @@ while (true)
                 }
                 catch (AddDepartamentFailedException ex)
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine(ex.Message);
                     goto select_departament;
                 }
